@@ -27,7 +27,7 @@ jobs:
       with:
        host: 172.31.84.80
        username: webadmin
-       password: adminpass
+       key: ${{ secrets.KEY }}
        port: 22
        source: "webapp/target/*.war"
        target: "/opt/apache-tomcat-8.5.82/webapps"
